@@ -28,6 +28,7 @@ namespace Seasar.Controls.Win
 	/// <summary>
 	/// XPƒ‰ƒCƒN‚ÈUI‚ÌButton‚Å‚·
 	/// </summary>
+	[System.Drawing.ToolboxBitmap(typeof(XPButton), "XPButton.bmp")]
 	public class XPButton : Button
 	{
         #region Private Field
