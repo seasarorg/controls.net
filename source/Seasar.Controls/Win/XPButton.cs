@@ -113,8 +113,8 @@ namespace Seasar.Controls.Win
             // Focusを得た状態を追加します
             modes |= XPButtonModes.Focus;
 
-            // XPButtonを再描画します
-			this.Refresh();
+            // FlatStyle.Standardの場合はXPButtonを再描画します
+			if(this.FlatStyle == FlatStyle.Standard) this.Refresh();
 		}
 
 		/// <summary>
@@ -128,8 +128,8 @@ namespace Seasar.Controls.Win
             // Focusを得た状態を解除します
             modes &= ~XPButtonModes.Focus;
 
-            // XPButtonを再描画します
-			this.Refresh();
+            // FlatStyle.Standardの場合はXPButtonを再描画します
+			if(this.FlatStyle == FlatStyle.Standard) this.Refresh();
 		}
 
 		/// <summary>
@@ -143,8 +143,8 @@ namespace Seasar.Controls.Win
             // マウスポインタを取得している状態を追加します
             modes |= XPButtonModes.MouseEnter;
 
-            // XPButtonを再描画します
-			this.Refresh();
+            // FlatStyle.Standardの場合はXPButtonを再描画します
+			if(this.FlatStyle == FlatStyle.Standard) this.Refresh();
 		}
 
 		/// <summary>
@@ -153,13 +153,13 @@ namespace Seasar.Controls.Win
 		/// <param name="e"></param>
 		protected override void OnMouseLeave(EventArgs e)
 		{
-			base.OnMouseEnter (e);
+			base.OnMouseLeave (e);
 
             // マウスポインタを取得している状態を解除します
             modes &= ~XPButtonModes.MouseEnter;
 
-            // XPButtonを再描画します
-			this.Refresh();
+            // FlatStyle.Standardの場合はXPButtonを再描画します
+			if(this.FlatStyle == FlatStyle.Standard) this.Refresh();
 		}
 
 		/// <summary>
@@ -173,8 +173,8 @@ namespace Seasar.Controls.Win
             // マウスボタンが押されている状態を追加します
             modes |= XPButtonModes.MouseDown;
 
-            // XPButtonを再描画します
-			this.Refresh();
+            // FlatStyle.Standardの場合はXPButtonを再描画します
+			if(this.FlatStyle == FlatStyle.Standard) this.Refresh();
 		}
 
 		/// <summary>
@@ -188,8 +188,8 @@ namespace Seasar.Controls.Win
             // マウスボタンが押されている状態を解除します
             modes &= ~XPButtonModes.MouseDown;
 
-            // XPButtonを再描画します
-			this.Refresh();
+            // FlatStyle.Standardの場合はXPButtonを再描画します
+			if(this.FlatStyle == FlatStyle.Standard) this.Refresh();
 		}
 
 		/// <summary>
@@ -210,6 +210,13 @@ namespace Seasar.Controls.Win
 		/// <param name="pevent"></param>
 		protected override void OnPaint(PaintEventArgs pevent) 
 		{
+            // FlatStyle.Standard以外の場合は、XPスタイルにしません
+            if(this.FlatStyle != FlatStyle.Standard)
+            {
+                base.OnPaint(pevent);
+                return;
+            }
+
 			Graphics graphics = pevent.Graphics;
 
 			if((modes & XPButtonModes.MouseDown) != XPButtonModes.None)
@@ -232,7 +239,6 @@ namespace Seasar.Controls.Win
 				// 通常のボタンを描きます
 				xpButtonService.PaintNormal(this, graphics);
 			}
-
 		}
 
 		#endregion
