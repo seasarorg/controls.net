@@ -99,6 +99,10 @@
                     BuildAction = "Compile"
                 />
                 <File
+                    RelPath = "Win\XPButton.bmp"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
                     RelPath = "Win\XPButton.cs"
                     SubType = "Component"
                     BuildAction = "Compile"
