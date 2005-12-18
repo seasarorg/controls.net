@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seasar.Controls", "Seasar.Controls\Seasar.Controls.csproj", "{BBA38FB3-A365-4133-80C2-C57C0188FAA7}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seasar.Controls.Examples", "Seasar.Controls.Examples\Seasar.Controls.Examples.csproj", "{45D30C5C-F7C3-4E21-B350-50CF8A2E9724}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BBA38FB3-A365-4133-80C2-C57C0188FAA7}.Debug.ActiveCfg = Debug|.NET
+		{BBA38FB3-A365-4133-80C2-C57C0188FAA7}.Debug.Build.0 = Debug|.NET
+		{BBA38FB3-A365-4133-80C2-C57C0188FAA7}.Release.ActiveCfg = Release|.NET
+		{BBA38FB3-A365-4133-80C2-C57C0188FAA7}.Release.Build.0 = Release|.NET
+		{45D30C5C-F7C3-4E21-B350-50CF8A2E9724}.Debug.ActiveCfg = Debug|.NET
+		{45D30C5C-F7C3-4E21-B350-50CF8A2E9724}.Debug.Build.0 = Debug|.NET
+		{45D30C5C-F7C3-4E21-B350-50CF8A2E9724}.Release.ActiveCfg = Release|.NET
+		{45D30C5C-F7C3-4E21-B350-50CF8A2E9724}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
