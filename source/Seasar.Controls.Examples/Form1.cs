@@ -38,8 +38,8 @@ namespace Seasar.Controls.Examples
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private Seasar.Controls.Win.XPButton xpButton4;
         private System.Windows.Forms.Button button4;
+        private Seasar.Controls.Win.XPButton xpButton4;
 		/// <summary>
 		/// 必要なデザイナ変数です。
 		/// </summary>
@@ -84,11 +84,11 @@ namespace Seasar.Controls.Examples
             this.xpButton3 = new Seasar.Controls.Win.XPButton();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.xpButton4 = new Seasar.Controls.Win.XPButton();
+            this.button2 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.xpButton4 = new Seasar.Controls.Win.XPButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -115,9 +115,9 @@ namespace Seasar.Controls.Examples
             // 
             this.xpButton3.BackColor = System.Drawing.Color.AliceBlue;
             this.xpButton3.ForeColor = System.Drawing.Color.Navy;
-            this.xpButton3.Location = new System.Drawing.Point(112, 24);
+            this.xpButton3.Location = new System.Drawing.Point(16, 88);
             this.xpButton3.Name = "xpButton3";
-            this.xpButton3.Size = new System.Drawing.Size(72, 24);
+            this.xpButton3.Size = new System.Drawing.Size(80, 24);
             this.xpButton3.TabIndex = 2;
             this.xpButton3.Text = "xpButton3";
             // 
@@ -125,6 +125,7 @@ namespace Seasar.Controls.Examples
             // 
             this.button1.Location = new System.Drawing.Point(16, 24);
             this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "button1";
             // 
@@ -136,10 +137,28 @@ namespace Seasar.Controls.Examples
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(16, 16);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(264, 88);
+            this.groupBox1.Size = new System.Drawing.Size(240, 128);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "通常のボタン";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.AliceBlue;
+            this.button3.ForeColor = System.Drawing.Color.Navy;
+            this.button3.Location = new System.Drawing.Point(16, 88);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(80, 24);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "button3";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(16, 56);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "button2(&T)";
             // 
             // groupBox2
             // 
@@ -147,51 +166,34 @@ namespace Seasar.Controls.Examples
             this.groupBox2.Controls.Add(this.xpButton1);
             this.groupBox2.Controls.Add(this.xpButton2);
             this.groupBox2.Controls.Add(this.xpButton3);
-            this.groupBox2.Location = new System.Drawing.Point(16, 112);
+            this.groupBox2.Location = new System.Drawing.Point(16, 160);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(264, 104);
+            this.groupBox2.Size = new System.Drawing.Size(240, 128);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "XPButton";
             // 
-            // button2
+            // button4
             // 
-            this.button2.Location = new System.Drawing.Point(16, 56);
-            this.button2.Name = "button2";
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2(&T)";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.AliceBlue;
-            this.button3.ForeColor = System.Drawing.Color.Navy;
-            this.button3.Location = new System.Drawing.Point(112, 24);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(72, 24);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
+            this.button4.Location = new System.Drawing.Point(112, 24);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(112, 88);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "button4";
             // 
             // xpButton4
             // 
             this.xpButton4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.xpButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.xpButton4.Location = new System.Drawing.Point(112, 56);
+            this.xpButton4.Location = new System.Drawing.Point(112, 24);
             this.xpButton4.Name = "xpButton4";
+            this.xpButton4.Size = new System.Drawing.Size(112, 88);
             this.xpButton4.TabIndex = 3;
             this.xpButton4.Text = "xpButton4";
-            // 
-            // button4
-            // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(112, 56);
-            this.button4.Name = "button4";
-            this.button4.TabIndex = 6;
-            this.button4.Text = "button4";
             // 
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 12);
-            this.ClientSize = new System.Drawing.Size(292, 266);
+            this.ClientSize = new System.Drawing.Size(280, 302);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
